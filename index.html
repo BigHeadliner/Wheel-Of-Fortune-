@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>wheel</title>
+</head>
+
+<body> 
+    <div class="main-container">  
+        <div class="main-nav"> 
+            <img class="main-arrow" src="img/arrow.png" alt="" > 
+            <img class="main-close" src="img/close.png" alt="" >
+        </div> 
+         
+        <h1 class="title"> 
+            Customer, you have one (1) pending reward!
+        </h1> 
+        <p class="subtitle"> 
+            Everyday, we randomly select 10 lucky visitors to receive a reward.
+        </p> 
+
+        <div id="popup1" class="popup popup-1">  
+            <img class="popup1-img" src="img/lose-spin.png" alt="" >
+               <p class="popup1-text popup1-text--no-margin">Sorry, you lost!</p> 
+               <p class="popup1-text popup1-text--final">You still<span class="popup1-span"> have (2) more attempts</span>. Good luck!</p>
+             <button class="close-btn close-btn--popup1">Ок</button>
+        </div> 
+         
+        <div id="popup2" class="popup popup-2">  
+              
+            <img class="popup-2-img" src="img/popup2-card.png" alt="" >
+           <p class="popup-2-title">Congratulations!</p> 
+           <p class="popup-2-text">Click the <span class="popup-2-span">“CONTINUE”</span> button to claim your Walmart Gift Card.</p> 
+           <p class="important-message"><span class="important-message-span">Important:</span> Hurry up, the number of prizes is limited!</p> 
+            <div class="countdown">  
+                <p class="countdown-title">You only have</p> 
+                <p class="countdown-text"><span id="minutes">5</span> minutes <span id="seconds">25</span> seconds</p>
+
+            </div>
+             <button class="close-btn popup-2-btn">CONTINUE</button>
+        </div>
+    <div class="wheel-container">
+        <div class="arrow"> 
+            <img src="img/indicator.png" alt="">
+        </div>
+        <div class="wheel rotating"></div>
+
+        <button class="spin">SPIN</button>
+        
+    </div> 
+     
+    <div class="instruction"> 
+        <img class="instruction-info" src="img/info.png" alt="" > 
+        <p class="instruction-text">Click “Spin” and claim your gift!</p>
+    </div>  
+     
+    <div class="reviews">  
+         
+        <div class="review"> 
+            <img class="review-img" src="img/jane-cooper.png" alt="" > 
+            <p class="review-title">Jane Cooper</p> 
+            <p class="review-text">I had never won anything before, but today I got lucky! Thanks!</p> 
+            <p class="review-time">23 minutes ago</p>
+        </div> 
+         
+        <div class="review"> 
+            <img class="review-img" src="img/cameron-williamson.png" alt="" > 
+            <p class="review-title">Cameron Williamson</p> 
+            <p class="review-text">Wow! I’ve won! Unbelievable</p> 
+            <p class="review-time">45 minutes ago</p>
+        </div>
+    </div> 
+     <a class="more-comments-link" href="#" >
+        <div class="more-comments"> 
+            <p class="more-comments-text">View More Comments</p> 
+            <img class="more-comments-img" src="img/view-more-comments.png" alt="" >
+        </div> 
+    </a>
+
+</div> 
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> 
+<script src="script.js"></script>
+</body>
+
+</html>
